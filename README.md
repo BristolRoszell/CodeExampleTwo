@@ -29,9 +29,22 @@ The program then needs to be set up to be properly read by humans. So the next l
  	 cout << fixed << showpoint << setprecision(2);
   
 The program then prints out the BMI of the user.
+	
+	cout << "Your body mass is; " << bodyMassIndex << endl;
+	
 After the BMI has been shown to the user, the program goes through an if/else loop to see where the new BMI calculation resides on the BMI scale. If the BMI is less than 20, the 
 user is underweight and needs to see a doctor. The program prints out in the command prompt, "Underweight: You should probably see a doctor." If the BMI is less than or equal to
 25, the program will print, "looking normal.". If the BMI is less than or equal to 30, the program will print, "Overweight: See your doctor.". Anything else will print, "Obese:
 See your doctor.".
+	
+	if (bodyMassIndex < 20) {
+		cout << "Underweight: You should probably see a doctor." << endl;
+	} else if (bodyMassIndex <= 25) {
+		cout << "looking normal." << endl;
+	} else if (bodyMassIndex <= 30) {
+		cout << "Overweight: See your doctor." << endl;
+	} else {
+		cout <<"Obese: See your doctor." << endl;
+	}
   
 After this, the program is finished and can be closed or restarted to calculate another user's body mass index.
