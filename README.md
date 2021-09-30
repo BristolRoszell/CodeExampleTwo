@@ -5,7 +5,7 @@ adding in my libraries by including <iostream> and <iomanip>
 I proceeded to set up my constants and variables. The constant is BMI_CONSTANT = 703; This is the number that we will multiply with the user input weight divided by height
 multiplied by height. The variables are weight, height, and bodyMassIndex as seen below:
   
-  const int BMI_CONSTANT = 703;
+  	const int BMI_CONSTANT = 703;
 	double weight;
 	double height;
 	double bodyMassIndex;
@@ -13,7 +13,7 @@ multiplied by height. The variables are weight, height, and bodyMassIndex as see
 After variables have been set up, the program needs to get the weight and the height from the user. To do this, the program asks the user to input a value for the variable
 "weight" and a value for the variable "height". This is seen in this code below:
   
-  cout << "Please Enter weight in pounds: " << endl;
+  	cout << "Please Enter weight in pounds: " << endl;
 	cin >> weight;
 	cout << "Please Enter height in inches: " << endl;
 	cin >> height;
@@ -22,11 +22,11 @@ The program then use the variables and the BMI_CONSTANT to evaluate the BMI and 
 BMI_CONSTANT variable
 set to 703. Then answer to this multiplication is divided by the user input of height times the user input of height again. The example of the code for this segment is below:
   
-  bodyMassIndex = weight * BMI_CONSTANT / (height * height);
+ 	 bodyMassIndex = weight * BMI_CONSTANT / (height * height);
   
 The program then needs to be set up to be properly read by humans. So the next line of code sets up the format and manipulates the output to be visually pleasing and legible.
   
-  cout << fixed << showpoint << setprecision(2);
+ 	 cout << fixed << showpoint << setprecision(2);
   
 The program then prints out the BMI of the user.
 After the BMI has been shown to the user, the program goes through an if/else loop to see where the new BMI calculation resides on the BMI scale. If the BMI is less than 20, the 
